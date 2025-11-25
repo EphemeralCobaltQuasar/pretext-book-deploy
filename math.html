@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math">
+<meta property="book:author" content="Esthesia">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.10.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f91c1a4dc12163f2.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.fe35e59c546f8d19.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math</span> <span class="subtitle">Math</span></a></h1>
+<p class="byline">Esthesia</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="algebraicTopology.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Math</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="math.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Math</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="algebraicTopology.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Algebraic Topology</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="appendix.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Appendix</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="attributions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Attributions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="math"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Math</span>
+</h2>
+<div class="para" id="math-2">sources, primer on spectral sequences, wikipedia, stacks project.<div class="autopermalink" data-description="Paragraph"><a href="#math-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="scheme"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">scheme.</span>
+</h3>
+<div class="para" id="scheme-2-1">a scheme is a <a href="math.html#locallyRingedSpace" class="xref" data-knowl="./knowl/xref/locallyRingedSpace.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.2: locally ringed space">locally ringed space</a> locally ringed space such that every point has an open neighbourhood which is an affine scheme.<div class="autopermalink" data-description="Paragraph"><a href="#scheme-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.1: scheme"><a href="#scheme" title="Copy heading and permalink for Definition 1.1.1: scheme" aria-label="Copy heading and permalink for Definition 1.1.1: scheme">🔗</a></div></article><article class="definition definition-like" id="locallyRingedSpace"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">locally ringed space.</span>
+</h3>
+<div class="para" id="locallyRingedSpace-2-1">a <a href="math.html#ringedSpace" class="xref" data-knowl="./knowl/xref/ringedSpace.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.3: ringed space">ringed space</a> such that every stalk of the structure sheaf is a local ring.<div class="autopermalink" data-description="Paragraph"><a href="#locallyRingedSpace-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.2: locally ringed space"><a href="#locallyRingedSpace" title="Copy heading and permalink for Definition 1.1.2: locally ringed space" aria-label="Copy heading and permalink for Definition 1.1.2: locally ringed space">🔗</a></div></article><article class="definition definition-like" id="ringedSpace"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ringed space.</span>
+</h3>
+<div class="para" id="ringedSpace-2-1">a pair <span class="process-math">\((X, \mathcal{O}_X)\)</span> consisting of a topological space X and a sheaf of rings <span class="process-math">\(\mathcal{O}_X\)</span> on it.<div class="autopermalink" data-description="Paragraph"><a href="#ringedSpace-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.3: ringed space"><a href="#ringedSpace" title="Copy heading and permalink for Definition 1.1.3: ringed space" aria-label="Copy heading and permalink for Definition 1.1.3: ringed space">🔗</a></div></article><article class="definition definition-like" id="topologicalSpace"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">topological space.</span>
+</h3>
+<div class="para" id="topologicalSpace-2-1">a topological space X is a pair <span class="process-math">\((X, \tau)\)</span> consisting of a set X and a set of subsets <span class="process-math">\(\tau \subset\mathcal{P}\)</span> satisfying the axioms of topology.<div class="autopermalink" data-description="Paragraph"><a href="#topologicalSpace-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.4: topological space"><a href="#topologicalSpace" title="Copy heading and permalink for Definition 1.1.4: topological space" aria-label="Copy heading and permalink for Definition 1.1.4: topological space">🔗</a></div></article><article class="definition definition-like" id="set"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">set.</span>
+</h3>
+<div class="para" id="set-2-1">a collection of stuff.<div class="autopermalink" data-description="Paragraph"><a href="#set-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.5: set"><a href="#set" title="Copy heading and permalink for Definition 1.1.5: set" aria-label="Copy heading and permalink for Definition 1.1.5: set">🔗</a></div></article><article class="definition definition-like" id="class"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">class.</span>
+</h3>
+<div class="para" id="class-2-1">a collection of objects. more or less a set. but differentiated to avoid weird behavior.<div class="autopermalink" data-description="Paragraph"><a href="#class-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.6: class"><a href="#class" title="Copy heading and permalink for Definition 1.1.6: class" aria-label="Copy heading and permalink for Definition 1.1.6: class">🔗</a></div></article><article class="definition definition-like" id="ordinal"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ordinal.</span>
+</h3>
+<div class="para logical" id="ordinal-2-1">
+<div class="para">a <a href="math.html#set" class="xref" data-knowl="./knowl/xref/set.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.5: set">set</a> is transitive if x <span class="process-math">\(\in\)</span> T implies x <span class="process-math">\(\subset\)</span> T. A set x is an ordinal if it is transitive and well-ordered by <span class="process-math">\(\in\text{.}\)</span> define <span class="process-math">\(x+1 = x \cup \{x\}\text{.}\)</span> this is another ordinal called the successor of x. x is called a successor ordinal if there exist a y such that x=y+1. the small ordinal is <span class="process-math">\(\emptyset\)</span> or 0. if x is not 0 and not a successor ordinal, x is a limit ordinal.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/set.html">
+\begin{equation*}
+x = \bigcup_{\gamma \in x}\gamma
+\end{equation*}
+</div>
+<div class="para">the first limit ordinal is <span class="process-math">\(\omega\text{.}\)</span> first uncountable ordinal is <span class="process-math">\(\omega_1\text{,}\)</span> the set of all countable ordinals. the collection of all ordinals is a proper class. it is well ordered by <span class="process-math">\(\in\text{,}\)</span> meaning, any nonempty set of ordinals has a least element. given a set of ordinals A, its supremum is defined to be, <span class="process-math">\(sup_{a \in A} a= \bigcup_{a \in A} a\text{.}\)</span> it is the least ordinal bigger or equal to all <span class="process-math">\(a \in A\)</span> given any well ordered set (S, <span class="process-math">\(\lt\)</span>), there is a unique ordinal a such that (S, <span class="process-math">\(\lt\)</span>) is isomorphic to (a, <span class="process-math">\(\in\)</span>), this is called the order type of the well ordered set.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ordinal-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.7: ordinal"><a href="#ordinal" title="Copy heading and permalink for Definition 1.1.7: ordinal" aria-label="Copy heading and permalink for Definition 1.1.7: ordinal">🔗</a></div></article><article class="definition definition-like" id="homologicallyGradedSpectralSequence"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">homologically graded spectral sequence.</span>
+</h3>
+<div class="para logical" id="homologicallyGradedSpectralSequence-2-1">
+<div class="para">A homologically graded spectral sequence <span class="process-math">\(E = \{E_r\}\)</span> consists of a sequence of <span class="process-math">\(\mathbb{Z}\)</span>-bigraded R <a href="math.html#module" class="xref" data-knowl="./knowl/xref/module.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.9: module">module</a> <span class="process-math">\(Er = \{E^r_{p,q}\}_{r \ge 1}\)</span> together with differentials</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/module.html">
+\begin{equation*}
+d^r : E^r_{p,q} \rightarrow E^r_{p-r,q+r-1} 
+\end{equation*}
+</div>
+<div class="para">such that <span class="process-math">\(E^{r+1} \cong H_∗(E^r)\text{.}\)</span> A morphism <span class="process-math">\(f : E \rightarrow E′\)</span> of spectral sequences is a family of morphisms of complexes <span class="process-math">\(f^r : E^r \rightarrow E^{′r}\)</span> such that <span class="process-math">\(f^{r+1}\)</span> is the morphism <span class="process-math">\(H_*(f^r)\)</span> induced by <span class="process-math">\(f^r\text{.}\)</span> from A PRIMER ON SPECTRAL SEQUENCES</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#homologicallyGradedSpectralSequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.8: homologically graded spectral sequence"><a href="#homologicallyGradedSpectralSequence" title="Copy heading and permalink for Definition 1.1.8: homologically graded spectral sequence" aria-label="Copy heading and permalink for Definition 1.1.8: homologically graded spectral sequence">🔗</a></div></article><article class="definition definition-like" id="module"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">module.</span>
+</h3>
+<div class="para logical" id="module-2-1">
+<div class="para">A left R-module M consists of an <a href="math.html#abelianGroup" class="xref" data-knowl="./knowl/xref/abelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.10: abelian group">abelian group</a> (M, +) and an operation <span class="process-math">\(\cdot : R \times M \rightarrow M\)</span> such that for all r, s in R and x, y in M, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/abelianGroup.html">
+\begin{equation*}
+r \cdot (x+y) = r \cdot x + r \cdot y
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/abelianGroup.html">
+\begin{equation*}
+(r + s) \cdot x = r \cdot x + s \cdot x
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/abelianGroup.html">
+\begin{equation*}
+rx \cdot x = r \cdot (s \cdot x)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/abelianGroup.html">
+\begin{equation*}
+1 \cdot x = x
+\end{equation*}
+</div>
+<div class="para">from wikipedia.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#module-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.9: module"><a href="#module" title="Copy heading and permalink for Definition 1.1.9: module" aria-label="Copy heading and permalink for Definition 1.1.9: module">🔗</a></div></article><article class="definition definition-like" id="abelianGroup"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">abelian group.</span>
+</h3>
+<div class="para" id="abelianGroup-2-1">A <a href="math.html#commutative" class="xref" data-knowl="./knowl/xref/commutative.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.11: commutative">commutative</a> <a href="math.html#group" class="xref" data-knowl="./knowl/xref/group.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.13: group">group</a>.<div class="autopermalink" data-description="Paragraph"><a href="#abelianGroup-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.10: abelian group"><a href="#abelianGroup" title="Copy heading and permalink for Definition 1.1.10: abelian group" aria-label="Copy heading and permalink for Definition 1.1.10: abelian group">🔗</a></div></article><article class="definition definition-like" id="commutative"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">commutative.</span>
+</h3>
+<div class="para" id="commutative-2-1">A <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> is said to be commutative over a set S if all elements in that set <a href="math.html#commute" class="xref" data-knowl="./knowl/xref/commute.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.12: commute">commute</a> when using that <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a>.<div class="autopermalink" data-description="Paragraph"><a href="#commutative-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.11: commutative"><a href="#commutative" title="Copy heading and permalink for Definition 1.1.11: commutative" aria-label="Copy heading and permalink for Definition 1.1.11: commutative">🔗</a></div></article><article class="definition definition-like" id="commute"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">commute.</span>
+</h3>
+<div class="para" id="commute-2-1">x commutes with y if <span class="process-math">\(x \cdot y = y \cdot x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#commute-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.12: commute"><a href="#commute" title="Copy heading and permalink for Definition 1.1.12: commute" aria-label="Copy heading and permalink for Definition 1.1.12: commute">🔗</a></div></article><article class="definition definition-like" id="group"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">group.</span>
+</h3>
+<div class="para" id="group-2-1">A set G with a <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a>, + or <span class="process-math">\(\cdot\text{.}\)</span> with the following, <a href="math.html#associativity" class="xref" data-knowl="./knowl/xref/associativity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.36: associativity">associativity</a>, <a href="math.html#identityElement" class="xref" data-knowl="./knowl/xref/identityElement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.37: identity element">identity element</a>, and <a href="math.html#inverse" class="xref" data-knowl="./knowl/xref/inverse.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.38: inverse">inverse</a><div class="autopermalink" data-description="Paragraph"><a href="#group-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.13: group"><a href="#group" title="Copy heading and permalink for Definition 1.1.13: group" aria-label="Copy heading and permalink for Definition 1.1.13: group">🔗</a></div></article><article class="definition definition-like" id="graded"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">graded.</span>
+</h3>
+<div class="para" id="graded-2-1">A graded <a href="math.html#ring" class="xref" data-knowl="./knowl/xref/ring.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.15: ring">ring</a> is a <a href="math.html#ring" class="xref" data-knowl="./knowl/xref/ring.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.15: ring">ring</a> R where the underlying additive <a href="math.html#group" class="xref" data-knowl="./knowl/xref/group.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.13: group">group</a> is a <a href="math.html#directSum" class="xref" data-knowl="./knowl/xref/directSum.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.17: direct sum">direct sum</a> of <a href="math.html#abelianGroup" class="xref" data-knowl="./knowl/xref/abelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.10: abelian group">abelian group</a><div class="autopermalink" data-description="Paragraph"><a href="#graded-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.14: graded"><a href="#graded" title="Copy heading and permalink for Definition 1.1.14: graded" aria-label="Copy heading and permalink for Definition 1.1.14: graded">🔗</a></div></article><article class="definition definition-like" id="ring"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ring.</span>
+</h3>
+<div class="para logical" id="ring-2-1">
+<div class="para">A group R with two <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a>, addition + and multiplication <span class="process-math">\(\cdot\text{.}\)</span> R is an <a href="math.html#abelianGroup" class="xref" data-knowl="./knowl/xref/abelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.10: abelian group">abelian group</a> under addition and a <a href="math.html#monoid" class="xref" data-knowl="./knowl/xref/monoid.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.16: monoid">monoid</a> under multiplication. Multiplication is distributive with respect to addition,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/binaryOperation.html ./knowl/xref/abelianGroup.html ./knowl/xref/monoid.html">
+\begin{equation*}
+a \cdot (b + c) = a \cdot b + a \cdot c \; \text{(left distributivity)}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ring-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.15: ring"><a href="#ring" title="Copy heading and permalink for Definition 1.1.15: ring" aria-label="Copy heading and permalink for Definition 1.1.15: ring">🔗</a></div></article><article class="definition definition-like" id="monoid"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">monoid.</span>
+</h3>
+<div class="para" id="monoid-2-1">A monoid is a set S with a binary operation which is <a href="math.html#associativity" class="xref" data-knowl="./knowl/xref/associativity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.36: associativity">associativity</a> and has an <a href="math.html#identityElement" class="xref" data-knowl="./knowl/xref/identityElement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.37: identity element">identity element</a>.<div class="autopermalink" data-description="Paragraph"><a href="#monoid-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.16: monoid"><a href="#monoid" title="Copy heading and permalink for Definition 1.1.16: monoid" aria-label="Copy heading and permalink for Definition 1.1.16: monoid">🔗</a></div></article><article class="definition definition-like" id="directSum"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">direct sum.</span>
+</h3>
+<div class="para" id="directSum-2-1">Direct sum is a <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> with <a href="math.html#associativity" class="xref" data-knowl="./knowl/xref/associativity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.36: associativity">associativity</a> and <a href="math.html#commutative" class="xref" data-knowl="./knowl/xref/commutative.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.11: commutative">commutative</a> <a href="math.html#upTo" class="xref" data-knowl="./knowl/xref/upTo.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.23: up to">up to</a> <a href="math.html#isomorphism" class="xref" data-knowl="./knowl/xref/isomorphism.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.30: isomorphism">isomorphism</a>. Direct sum of a <a href="math.html#finite" class="xref" data-knowl="./knowl/xref/finite.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.18: finite">finite</a> number of objects <a href="math.html#abelianGroup" class="xref" data-knowl="./knowl/xref/abelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.10: abelian group">abelian group</a> is isomorphic to the corresponding direct product. This is not the case for <a href="math.html#nonabelianGroup" class="xref" data-knowl="./knowl/xref/nonabelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.22: nonabelian group">nonabelian group</a> or an <a href="math.html#infinite" class="xref" data-knowl="./knowl/xref/infinite.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.21: infinite">infinite</a> number of objects in the direct sum.<div class="autopermalink" data-description="Paragraph"><a href="#directSum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.17: direct sum"><a href="#directSum" title="Copy heading and permalink for Definition 1.1.17: direct sum" aria-label="Copy heading and permalink for Definition 1.1.17: direct sum">🔗</a></div></article><article class="definition definition-like" id="finite"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">finite.</span>
+</h3>
+<div class="para" id="finite-2-1">If a number x is <a href="math.html#finite" class="xref" data-knowl="./knowl/xref/finite.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.18: finite">finite</a>, there exist a <a href="math.html#naturalNumber" class="xref" data-knowl="./knowl/xref/naturalNumber.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.19: natural number">natural number</a> N such that N <span class="process-math">\(&gt;\)</span> x.<div class="autopermalink" data-description="Paragraph"><a href="#finite-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.18: finite"><a href="#finite" title="Copy heading and permalink for Definition 1.1.18: finite" aria-label="Copy heading and permalink for Definition 1.1.18: finite">🔗</a></div></article><article class="definition definition-like" id="naturalNumber"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">natural number.</span>
+</h3>
+<div class="para" id="naturalNumber-2-1">An <a href="math.html#integer" class="xref" data-knowl="./knowl/xref/integer.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.20: integer">integer</a> starting from 1 and onwards. (sometimes starting from 0).<div class="autopermalink" data-description="Paragraph"><a href="#naturalNumber-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.19: natural number"><a href="#naturalNumber" title="Copy heading and permalink for Definition 1.1.19: natural number" aria-label="Copy heading and permalink for Definition 1.1.19: natural number">🔗</a></div></article><article class="definition definition-like" id="integer"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">integer.</span>
+</h3>
+<div class="para" id="integer-2-1">Whole number. Can be negative, positive or zero.<div class="autopermalink" data-description="Paragraph"><a href="#integer-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.20: integer"><a href="#integer" title="Copy heading and permalink for Definition 1.1.20: integer" aria-label="Copy heading and permalink for Definition 1.1.20: integer">🔗</a></div></article><article class="definition definition-like" id="infinite"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">infinite.</span>
+</h3>
+<div class="para" id="infinite-2-1">A number x is said to be infinite if for any <a href="math.html#naturalNumber" class="xref" data-knowl="./knowl/xref/naturalNumber.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.19: natural number">natural number</a> N, x <span class="process-math">\(&gt;\)</span> N.<div class="autopermalink" data-description="Paragraph"><a href="#infinite-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.21: infinite"><a href="#infinite" title="Copy heading and permalink for Definition 1.1.21: infinite" aria-label="Copy heading and permalink for Definition 1.1.21: infinite">🔗</a></div></article><article class="definition definition-like" id="nonabelianGroup"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">nonabelian group.</span>
+</h3>
+<div class="para" id="nonabelianGroup-2-1">A <a href="math.html#group" class="xref" data-knowl="./knowl/xref/group.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.13: group">group</a> that is not an <a href="math.html#abelianGroup" class="xref" data-knowl="./knowl/xref/abelianGroup.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.10: abelian group">abelian group</a>.<div class="autopermalink" data-description="Paragraph"><a href="#nonabelianGroup-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.22: nonabelian group"><a href="#nonabelianGroup" title="Copy heading and permalink for Definition 1.1.22: nonabelian group" aria-label="Copy heading and permalink for Definition 1.1.22: nonabelian group">🔗</a></div></article><article class="definition definition-like" id="upTo"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">up to.</span>
+</h3>
+<div class="para" id="upTo-2-1">Two objects can be said to be equal up to some <a href="math.html#equivalenceRelation" class="xref" data-knowl="./knowl/xref/equivalenceRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.24: equivalence relation">equivalence relation</a>.<div class="autopermalink" data-description="Paragraph"><a href="#upTo-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.23: up to"><a href="#upTo" title="Copy heading and permalink for Definition 1.1.23: up to" aria-label="Copy heading and permalink for Definition 1.1.23: up to">🔗</a></div></article><article class="definition definition-like" id="equivalenceRelation"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">equivalence relation.</span>
+</h3>
+<div class="para" id="equivalenceRelation-2-1">An equivalence relation is a <a href="math.html#binaryRelation" class="xref" data-knowl="./knowl/xref/binaryRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.25: binary relation">binary relation</a> that is <a href="math.html#reflexive" class="xref" data-knowl="./knowl/xref/reflexive.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.27: reflexive">reflexive</a>, <a href="math.html#symmetric" class="xref" data-knowl="./knowl/xref/symmetric.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.28: symmetric">symmetric</a>, and <a href="math.html#transitive" class="xref" data-knowl="./knowl/xref/transitive.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.29: transitive">transitive</a>.<div class="autopermalink" data-description="Paragraph"><a href="#equivalenceRelation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.24: equivalence relation"><a href="#equivalenceRelation" title="Copy heading and permalink for Definition 1.1.24: equivalence relation" aria-label="Copy heading and permalink for Definition 1.1.24: equivalence relation">🔗</a></div></article><article class="definition definition-like" id="binaryRelation"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">binary relation.</span>
+</h3>
+<div class="para" id="binaryRelation-2-1">A binary relation is a set of <a href="math.html#orderedPairs" class="xref" data-knowl="./knowl/xref/orderedPairs.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.26: ordered pairs">ordered pairs</a> relating two sets. A <a href="math.html#map" class="xref" data-knowl="./knowl/xref/map.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.32: map">map</a> is a binary relation with a restriction on the first element of the pair having to be unique.<div class="autopermalink" data-description="Paragraph"><a href="#binaryRelation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.25: binary relation"><a href="#binaryRelation" title="Copy heading and permalink for Definition 1.1.25: binary relation" aria-label="Copy heading and permalink for Definition 1.1.25: binary relation">🔗</a></div></article><article class="definition definition-like" id="orderedPairs"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ordered pairs.</span>
+</h3>
+<div class="para" id="orderedPairs-2-1">A pair of objects (a, b). Order matters, that is, (a, b) is different from (b, a).<div class="autopermalink" data-description="Paragraph"><a href="#orderedPairs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.26: ordered pairs"><a href="#orderedPairs" title="Copy heading and permalink for Definition 1.1.26: ordered pairs" aria-label="Copy heading and permalink for Definition 1.1.26: ordered pairs">🔗</a></div></article><article class="definition definition-like" id="reflexive"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">reflexive.</span>
+</h3>
+<div class="para" id="reflexive-2-1">A <a href="math.html#binaryRelation" class="xref" data-knowl="./knowl/xref/binaryRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.25: binary relation">binary relation</a> is reflexive on A if for all a in A, (a, a).<div class="autopermalink" data-description="Paragraph"><a href="#reflexive-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.27: reflexive"><a href="#reflexive" title="Copy heading and permalink for Definition 1.1.27: reflexive" aria-label="Copy heading and permalink for Definition 1.1.27: reflexive">🔗</a></div></article><article class="definition definition-like" id="symmetric"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">symmetric.</span>
+</h3>
+<div class="para" id="symmetric-2-1">A <a href="math.html#binaryRelation" class="xref" data-knowl="./knowl/xref/binaryRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.25: binary relation">binary relation</a> ~ is symmetric over A if for every a, b in A, <span class="process-math">\((a, b) \leftrightarrow (b, a)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#symmetric-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.28: symmetric"><a href="#symmetric" title="Copy heading and permalink for Definition 1.1.28: symmetric" aria-label="Copy heading and permalink for Definition 1.1.28: symmetric">🔗</a></div></article><article class="definition definition-like" id="transitive"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">transitive.</span>
+</h3>
+<div class="para" id="transitive-2-1">A <a href="math.html#binaryRelation" class="xref" data-knowl="./knowl/xref/binaryRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.25: binary relation">binary relation</a> is transitive in a set A if for every a, b, c in A, if (a, b) and (b, c) then (a, c).<div class="autopermalink" data-description="Paragraph"><a href="#transitive-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.29: transitive"><a href="#transitive" title="Copy heading and permalink for Definition 1.1.29: transitive" aria-label="Copy heading and permalink for Definition 1.1.29: transitive">🔗</a></div></article><article class="definition definition-like" id="isomorphism"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">isomorphism.</span>
+</h3>
+<div class="para" id="isomorphism-2-1">An isomorphism is a <a href="math.html#morphism" class="xref" data-knowl="./knowl/xref/morphism.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.31: morphism">morphism</a> with an <a href="math.html#inverse" class="xref" data-knowl="./knowl/xref/inverse.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.38: inverse">inverse</a>.<div class="autopermalink" data-description="Paragraph"><a href="#isomorphism-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.30: isomorphism"><a href="#isomorphism" title="Copy heading and permalink for Definition 1.1.30: isomorphism" aria-label="Copy heading and permalink for Definition 1.1.30: isomorphism">🔗</a></div></article><article class="definition definition-like" id="morphism"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">morphism.</span>
+</h3>
+<div class="para" id="morphism-2-1">A <a href="math.html#map" class="xref" data-knowl="./knowl/xref/map.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.32: map">map</a> that has <a href="math.html#identityElement" class="xref" data-knowl="./knowl/xref/identityElement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.37: identity element">identity element</a> and <a href="math.html#associativity" class="xref" data-knowl="./knowl/xref/associativity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.36: associativity">associativity</a>.<div class="autopermalink" data-description="Paragraph"><a href="#morphism-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.31: morphism"><a href="#morphism" title="Copy heading and permalink for Definition 1.1.31: morphism" aria-label="Copy heading and permalink for Definition 1.1.31: morphism">🔗</a></div></article><article class="definition definition-like" id="map"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">map.</span>
+</h3>
+<div class="para" id="map-2-1">A map is a function that takes elements of set A to elements of set B, <span class="process-math">\(f: A \rightarrow B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#map-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.32: map"><a href="#map" title="Copy heading and permalink for Definition 1.1.32: map" aria-label="Copy heading and permalink for Definition 1.1.32: map">🔗</a></div></article><article class="definition definition-like" id="directProduct"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">direct product.</span>
+</h3>
+<div class="para" id="directProduct-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#directProduct-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Definition 1.1.33: direct product"><a href="#directProduct" title="Copy heading and permalink for Definition 1.1.33: direct product" aria-label="Copy heading and permalink for Definition 1.1.33: direct product">🔗</a></div></article><article class="definition definition-like" id="binaryOperation"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">binary operation.</span>
+</h3>
+<div class="para" id="binaryOperation-2-1">Takes two elements and gives one. If the sets taken and given out is not specified, but the binary operation is specified over only one set S, assume the binary operation <span class="process-math">\(\cdot\)</span> is an <a href="math.html#infixOperator" class="xref" data-knowl="./knowl/xref/infixOperator.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.35: infix operator">infix operator</a> which takes two elements of that set to that set. <span class="process-math">\((\cdot): S \times S \rightarrow S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#binaryOperation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.34: binary operation"><a href="#binaryOperation" title="Copy heading and permalink for Definition 1.1.34: binary operation" aria-label="Copy heading and permalink for Definition 1.1.34: binary operation">🔗</a></div></article><article class="definition definition-like" id="infixOperator"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">infix operator.</span>
+</h3>
+<div class="para" id="infixOperator-2-1">A binary operator which is placed between two elements.<div class="autopermalink" data-description="Paragraph"><a href="#infixOperator-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.35: infix operator"><a href="#infixOperator" title="Copy heading and permalink for Definition 1.1.35: infix operator" aria-label="Copy heading and permalink for Definition 1.1.35: infix operator">🔗</a></div></article><article class="definition definition-like" id="associativity"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">associativity.</span>
+</h3>
+<div class="para logical" id="associativity-2-1">
+<div class="para">A set S is associative if for all x, y, z in S,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x \cdot y) \cdot z = x \cdot (y \cdot z)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#associativity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.36: associativity"><a href="#associativity" title="Copy heading and permalink for Definition 1.1.36: associativity" aria-label="Copy heading and permalink for Definition 1.1.36: associativity">🔗</a></div></article><article class="definition definition-like" id="identityElement"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">identity element.</span>
+</h3>
+<div class="para" id="identityElement-2-1">A set S with a <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> <span class="process-math">\(\cdot\)</span> has an identity element if there exist an element e such that, for all a in S, <span class="process-math">\(a \cdot e=e \cdot a\text{.}\)</span> The identity element is sometimes 0 (when the <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> is +), or 1 (when the <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> is <span class="process-math">\(\cdot\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#identityElement-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.37: identity element"><a href="#identityElement" title="Copy heading and permalink for Definition 1.1.37: identity element" aria-label="Copy heading and permalink for Definition 1.1.37: identity element">🔗</a></div></article><article class="definition definition-like" id="inverse"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">inverse.</span>
+</h3>
+<div class="para" id="inverse-2-1">A set S with a <a href="math.html#binaryOperation" class="xref" data-knowl="./knowl/xref/binaryOperation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.34: binary operation">binary operation</a> <span class="process-math">\(\cdot\)</span> has inverses if for every non-zero element, a in S, there exist an inverse <span class="process-math">\(a^{-1}\)</span> in S so <span class="process-math">\(a \cdot a^{-1} = e = a^{-1} \cdot a\text{.}\)</span> Where e is the <a href="math.html#identityElement" class="xref" data-knowl="./knowl/xref/identityElement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.37: identity element">identity element</a><div class="autopermalink" data-description="Paragraph"><a href="#inverse-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.38: inverse"><a href="#inverse" title="Copy heading and permalink for Definition 1.1.38: inverse" aria-label="Copy heading and permalink for Definition 1.1.38: inverse">🔗</a></div></article><article class="definition definition-like" id="identityMap"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">identity map.</span>
+</h3>
+<div class="para" id="identityMap-2-1">a map that takes each element of a set to itself. acting as an <a href="math.html#identityElement" class="xref" data-knowl="./knowl/xref/identityElement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.37: identity element">identity element</a> but for maps.<div class="autopermalink" data-description="Paragraph"><a href="#identityMap-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.39: identity map"><a href="#identityMap" title="Copy heading and permalink for Definition 1.1.39: identity map" aria-label="Copy heading and permalink for Definition 1.1.39: identity map">🔗</a></div></article><div class="autopermalink" data-description="Section 1.1: Math"><a href="#math" title="Copy heading and permalink for Section 1.1: Math" aria-label="Copy heading and permalink for Section 1.1: Math">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="algebraicTopology.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
