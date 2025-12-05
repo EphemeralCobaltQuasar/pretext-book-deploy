@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Algebraic Topology",
-  "body": " Algebraic Topology  sources, hatcher algebraic topology, wikipedia, mathstackexchange. image to latex converter, chatgpt, helped type.   all maps are continuous unless stated otherwise.    format   my understanding esthesia  copy pasted. if its kinda informally written its my understanding. otherwise it is copy pasted.     continuous   no abrupt changes. esthesia     deformation retraction   given a space X and a subspace A, a deformation retraction is a function over an interval that starts at X and ends in A thats continuous. esthesia  A deformation retraction of a space onto a subspace is a family of maps  , , such that ( ), , and for all . The family should be in the sense that the associated  , , is .     attaching spaces   we stick X1 to X0 following what f says. X0 with X1 attached along f, . f takes A to X0. A subset of X1. esthesia  We start with a space and another space that we wish to attach to by identifying the points in a subspace with points of . xre The data needed to do this is a  , for then we can form a space of by identifying each point with its image . We denote this space by , the space with  attached along A via f . When we have the case of attaching an -cell to via a  .     mapping cone   Closely related to the  is the mapping cone  , where is the cone . We attach this to along via the identifications .     mapping cylinder   The mapping cylinder of a map is the space obtained from by attaching along via .     homotopy   a homotopy takes a function to another over an interval. esthesia  Formally, a homotopy between two continuous functions and from a topological space to a topological space is defined to be a continuous function from the product of the space with the unit interval to such that and for all . wikipedia     homotopic   One says that two maps  are homotopic if there exists a  connecting them, and one writes .     retraction   a retraction of onto , a  such that and .     homotopy relative to   when homotopy is restricted to A, it doesnt change with time, or t. esthesia.  In general, a homotopy whose restriction to a subspace is independent of is called a homotopy relative to  , or more concisely, a homotopy rel  .     homotopy equivalence   A  is called a homotopy equivalence if there is a  such that and .     homotopy equivalent   The spaces and are said to be homotopy equivalent or to have the same homotopy type if there exist a between them. The notation is .     homotopy type   The spaces and are said to be homotopy equivalent or to have the same homotopy type if there exist a between them. The notation is .     contractible   A space having the of a point is called contractible . This amounts to requiring that the identity of the space be .     nullhomotopic    to a constant map     cell complex     Start with a discrete set , whose points are regarded as 0-cells.  Inductively, form the -skeleton from by attaching -cells via maps  . This means that is the quotient space of the disjoint union of with a collection of -disks under the identifications for . Thus as a set, where each is an open -disk.  One can either stop this inductive process at a finite stage, setting for some , or one can continue indefinitely, setting . In the latter case is given the weak topology: a set is open (or closed) iff is open (or closed) in for each .  A space X constructed in this way is called a cell complex or CW complex .     n-cell   An n-cell is a homeomorphic to a copy of the unit ball in . https:\/\/math.stackexchange.com\/a\/1486272     n-skeleton   a n-skeleton is in a .     dimension   In a , if for some n, then X is said to be finite-dimensional, and the smallest such n is the dimension of X , the maximum dimension of cells of X .     graph   a 1  , is a graph. consists of 0-cells (vertices or points), and 1 cells (edges connecting points). an edge can have both ends attached to the same vertex.     euler characteristic   0-cells - 1-cells + 2-cells, gives the euler characteristic.     real projective n space    Real projective n-space  is defined to be the space of all lines through the origin in . Each such line is determined by a nonzero vector in , unique up to scalar multiplication, and is topologized as the space of under the equivalence relation for scalars .     complex projective n space    Example 0.6. Complex projective n-space  is the space of complex lines through the origin in , that is, 1-dimensional vector subspaces of . As in the case of , each line is determined by a nonzero vector in , unique up to scalar multiplication, and is topologized as the space of under the equivalence relation for .     characteristic map   Each cell in a  has a characteristic map  which extends the attaching  and is a homeomorphism from the interior of onto .     subcomplex   A subcomplex of a  is a closed subspace that is a union of cells of .     CW pair   A pair consisting of a  and a  will be called a CW pair .     products   If and are , then has the structure of a with the products where ranges over the of and ranges over the of .     quotient   for X\/A, compress A to a point. leave everything else in X the same. esthesia  If is a consisting of a  and a subcomplex , then the space inherits a natural structure from . The cells of are the cells of plus one new 0- , the image of in . For a  of attached by , the attaching for the corresponding in is the composition .     suspension   checked till here 24\/11\/2025  For a space , the suspension  is the of obtained by collapsing to one point and to another point. The motivating example is , when with the two ‘suspension points’ at the north and south poles of , the points . One can regard as a double cone on , the union of two copies of the cone  . If is a CW complex, so are and as of with its product cell structure, being given the standard cell structure of two 0-cells joined by a 1-cell.     join    Join. The cone is the union of all line segments joining points of to an external vertex, and similarly the suspension is the union of all line segments joining points of to two external vertices. More generally, given and a second space , one can define the space of all line segments joining points in to points in . This is the join  , the space of under the identifications and . Thus we are collapsing the subspace to and to .     simplex   the of n points is a convex polyhedron of dimension n − 1 called a simplex.     Wedge Sum   Given spaces and with chosen points and , the wedge sum  is the of the disjoint union obtained by identifying and to a single point.     smash product   Inside a product space there are copies of and , namely and for points and . These two copies of and in intersect only at the point , so their union can be identified with the  . The smash product  is then defined to be the  .     homotopy equivalence for a CW pair   If is a consisting of a  and a contractible subcomplex , then the   is a .     reduced suspension   Let be a and a 0-cell. Inside the  we have the line segment , and collapsing this to a point yields a space homotopy equivalent to , called the reduced suspension of .     homotopy extension property   A pair has the homotopy extension property if and only if is a retract of .     path   By a path in a space we mean a continuous  where is the unit interval .     homotopy of paths   A homotopy of paths in is a family , , such that:    The endpoints and are independent of .  The associated  defined by is continuous.    When two paths and are connected in this way by a homotopy , they are said to be homotopic . The notation for this is .     homotopy class   The equivalence class of a path under the equivalence relation of will be denoted and called the homotopy class of .     product path   Given two paths such that , there is a composition or product path  that traverses first and then , defined by the formula        loop   A loop is a that the same start and end point, also referred to as a .     basepoint   A is a that the same start and end point, also referred to as a basepoint .     set of all homotopy classes   The set of all homotopy classes  of loops  at the  is denoted .     fundamental group    is a group with respect to the product , . This group is called the fundamental group of at the  .     reparametrization   A reparametrization of a path is a composition where is any continuous such that and .     inverse path   For a path from to , the inverse path  from back to is defined by .     change of basepoint   Either way, we define a change-of-basepoint   by , . This is well-defined since if is a homotopy of loops based at , then is a homotopy of loops based at .     simply connected   In general, a space is called simply-connected if it is path-connected and has trivial .     lift   given the relation , is a lift of . p is a projection map.   is an infinite cyclic group generated by the homotopy class of the loop based at .  Note that , , where for . The theorem is therefore equivalent to the statement that every loop in based at is homotopic to for a unique . To prove this the idea will be to compare paths in with paths in via the  given by . This can be visualized geometrically by embedding in as the helix parametrized by , and then is the restriction to the helix of the projection of onto , . Observe that the loop is the composition where is the path , starting at 0 and ending at , winding around the helix times, upward if and downward if . The relation is expressed by saying that is a lift of .   lift      covering space   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered .     evenly covered   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered .     induced homomorphism   Suppose is a taking the basepoint to the basepoint . For brevity we write in this situation. Then induces a homomorphism , defined by composing loops based at with , that is, . This induced  is well-defined since a homotopy of loops based at yields a composed homotopy of loops based at , so . Furthermore, is a homomorphism since , both functions having the value for and the value for .  Two basic properties of induced homomorphisms are:  (1) for a composition .  (2) , which is a concise way of saying that the identity  induces the identity  .     free product   As a set, the free product  consists of all words of arbitrary finite length , where each letter belongs to a group and is not the identity element of , and adjacent letters and belong to different groups , that is, . Words satisfying these conditions are called reduced , the idea being that unreduced words can always be simplified to reduced words by writing adjacent letters that lie in the same as a single letter and by canceling trivial letters. The empty word is allowed, and will be the identity element of .     sheets   A covering space of a space is a space together with a  satisfying the following condition: Each point has an open neighborhood in such that is a union of disjoint open sets in , each of which is mapped homeomorphically onto by . Such a is called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .     homotopy lifting property   The homotopy lifting property , also known as the covering homotopy property , states the following:   Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .     path lifting property   First we have the homotopy lifting property , also known as the covering homotopy property :   Proposition 1.30.  Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .    Proof: This was proved as property (c) in the proof of Theorem 1.7.  Taking to be a point gives the path lifting property for a covering space , which says that for each path and each lift of the starting point , there is a unique path lifting starting at .  In particular, the uniqueness of lifts implies that every lift of a constant path is constant, but this could be deduced more simply from the fact that has the discrete topology, by the definition of a covering space.     unique lifting property   Next we have the unique lifting property :   Proposition 1.34.  Given a covering space and a  , if two lifts of agree at one point of and is connected, then and agree on all of .      semilocally simply-connected   A necessary condition for to have a simply-connected covering space is the following: Each point has a neighborhood such that the inclusion-induced  is trivial; one says is semilocally simply-connected if this holds.     isomorphism between covering spaces   We are interested in uniqueness up to isomorphism, where an isomorphism between covering spaces and is a homeomorphism such that . This condition means exactly that preserves the covering space structures, taking to for each . The inverse is then also an isomorphism, and the composition of two isomorphisms is an isomorphism, so we have an equivalence relation.   Proposition 1.37. If is path-connected and locally path-connected, then two path-connected covering spaces and are isomorphic via an isomorphism taking a basepoint to a basepoint iff .     universal cover   A consequence of the lifting criterion is that a simply-connected covering space of a path-connected, locally path-connected space is a covering space of every other path-connected covering space of . A simply-connected covering space of is therefore called a universal cover . It is unique up to isomorphism, so one is justified in calling it the universal cover.     deck transformations   For a covering space the isomorphisms are called deck transformations or covering transformations . These form a group under composition.  For example, for the covering space projecting a vertical helix onto a circle, the deck transformations are the vertical translations taking the helix onto itself, so in this case. For the -sheeted covering space , the deck transformations are the rotations of through angles that are multiples of , so .     normal covering space   A covering space is called normal if for each and each pair of lifts of there is a deck transformation taking to . For example, the covering     group action   Given a group and a space , then an action of on is a homomorphism from to the group of all homeomorphisms from to itself. Thus to each is associated a homeomorphism ,     orbit space   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in , and is called the orbit space of the action. For example, for a normal covering space , the orbit space is just .     orbit   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in .     fixed points   The reason why the action of this group on fails to satisfy is that there are fixed points : points for which there is a nontrivial element with . For example, the vertices of the     free action   An action without fixed points is called a free action. Thus for a free action of on , only the identity element of fixes any point of . This is equivalent to requiring that all the images of each are distinct, or in other words only when , since is equivalent to . Though condition implies freeness, the converse     cayley graph   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .     cayley complex   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .     subgraph   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     tree   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     maximal   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     K(G,1) space   A path-connected space whose fundamental group is isomorphic to a given group and which has a contractible universal covering space is called a K(G,1) space . The ‘1’ here refers to . More general spaces are studied in 4.2. All these spaces are called Eilenberg-MacLane spaces, though in the case they were studied by Hurewicz before Eilenberg and MacLane took up the general case. Here are some examples:    till pg86  "
+  "body": " Algebraic Topology  sources, hatcher algebraic topology, wikipedia, mathstackexchange. image to latex converter, chatgpt, helped type.   all maps are continuous unless stated otherwise.    format   my understanding esthesia  copy pasted. if its kinda informally written its my understanding. otherwise it is copy pasted.     continuous   no abrupt changes. esthesia     deformation retraction   given a space X and a subspace A, a deformation retraction is a function over an interval that starts at X and ends in A thats continuous. esthesia  A deformation retraction of a space onto a subspace is a family of maps  , , such that ( ), , and for all . The family should be in the sense that the associated  , , is .     attaching spaces   we stick X1 to X0 following what f says. X0 with X1 attached along f, . f takes A to X0. A subset of X1. esthesia  We start with a space and another space that we wish to attach to by identifying the points in a subspace with points of . xre The data needed to do this is a  , for then we can form a space of by identifying each point with its image . We denote this space by , the space with  attached along A via f . When we have the case of attaching an -cell to via a  .     mapping cone   Closely related to the  is the mapping cone  , where is the cone . We attach this to along via the identifications .     mapping cylinder   The mapping cylinder of a map is the space obtained from by attaching along via .     homotopy   a homotopy takes a function to another over an interval. esthesia  Formally, a homotopy between two continuous functions and from a topological space to a topological space is defined to be a continuous function from the product of the space with the unit interval to such that and for all . wikipedia     homotopic   One says that two maps  are homotopic if there exists a  connecting them, and one writes . n ball and dot is homotopic.     retraction   a retraction of onto , a  such that and .     homotopy relative to   when homotopy is restricted to A, it doesnt change with time, or t. esthesia.  In general, a homotopy whose restriction to a subspace is independent of is called a homotopy relative to  , or more concisely, a homotopy rel  .     homotopy equivalence   A  is called a homotopy equivalence if there is a  such that and .     homotopy equivalent   The spaces and are said to be homotopy equivalent or to have the same homotopy type if there exist a between them. The notation is .     homotopy type   The spaces and are said to be homotopy equivalent or to have the same homotopy type if there exist a between them. The notation is .     contractible   A space having the of a point is called contractible . This amounts to requiring that the identity of the space be .     nullhomotopic    to a constant map     cell complex     Start with a discrete set , whose points are regarded as 0-cells.  Inductively, form the -skeleton from by attaching -cells via maps  . This means that is the quotient space of the disjoint union of with a collection of -disks under the identifications for . Thus as a set, where each is an open -disk.  One can either stop this inductive process at a finite stage, setting for some , or one can continue indefinitely, setting . In the latter case is given the weak topology: a set is open (or closed) iff is open (or closed) in for each .  A space X constructed in this way is called a cell complex or CW complex .     n-cell   An n-cell is a homeomorphic to a copy of the unit ball in . https:\/\/math.stackexchange.com\/a\/1486272     n-skeleton   a n-skeleton is in a .     dimension   In a , if for some n, then X is said to be finite-dimensional, and the smallest such n is the dimension of X , the maximum dimension of cells of X .     graph   a 1  , is a graph. consists of 0-cells (vertices or points), and 1 cells (edges connecting points). an edge can have both ends attached to the same vertex.     euler characteristic   0-cells - 1-cells + 2-cells, gives the euler characteristic.     real projective n space    Real projective n-space  is defined to be the space of all lines through the origin in . Each such line is determined by a nonzero vector in , unique up to scalar multiplication, and is topologized as the space of under the equivalence relation for scalars .     complex projective n space    Example 0.6. Complex projective n-space  is the space of complex lines through the origin in , that is, 1-dimensional vector subspaces of . As in the case of , each line is determined by a nonzero vector in , unique up to scalar multiplication, and is topologized as the space of under the equivalence relation for .     characteristic map   Each cell in a  has a characteristic map  which extends the attaching  and is a homeomorphism from the interior of onto .     subcomplex   A subcomplex of a  is a closed subspace that is a union of cells of .     CW pair   A pair consisting of a  and a  will be called a CW pair .     products   If and are , then has the structure of a with the products where ranges over the of and ranges over the of .     quotient   for X\/A, compress A to a point. leave everything else in X the same. esthesia  If is a consisting of a  and a subcomplex , then the space inherits a natural structure from . The cells of are the cells of plus one new 0- , the image of in . For a  of attached by , the attaching for the corresponding in is the composition .     suspension   For a space , the suspension  is the of obtained by collapsing to one point and to another point. The motivating example is , when with the two ‘suspension points’ at the north and south poles of , the points . One can regard as a double cone on , the union of two copies of the cone  . If is a CW complex, so are and as of with its product cell structure, being given the standard cell structure of two 0-cells joined by a 1-cell.     join   goes from X to Y over an interval I. esthesia.   . The cone is the union of all line segments joining points of to an external vertex, and similarly the suspension is the union of all line segments joining points of to two external vertices. More generally, given and a second space , one can define the space of all line segments joining points in to points in . This is the join  , the space of under the identifications and . Thus we are collapsing the subspace to and to .     simplex   the of n points is a convex polyhedron of dimension n − 1 called a simplex.     Wedge Sum    . Given spaces and with chosen points and , the wedge sum  is the of the disjoint union obtained by identifying and to a single point.     smash product    . Inside a product space there are copies of and , namely and for points and . These two copies of and in intersect only at the point , so their union can be identified with the  . The smash product  is then defined to be the  .     homotopy equivalence for a CW pair   If is a consisting of a  and a contractible subcomplex , then the   is a .     reduced suspension    . Let be a and a 0-cell. Inside the  we have the line segment , and collapsing this to a point yields a space homotopy equivalent to , called the reduced suspension of .     homotopy extension property   A pair has the homotopy extension property if and only if is a retract of .     path   By a path in a space we mean a continuous  where is the unit interval .     homotopy of paths   A homotopy of paths in is a family , , such that:    The endpoints and are independent of .  The associated  defined by is continuous.    When two paths and are connected in this way by a homotopy , they are said to be homotopic . The notation for this is .     homotopy class   The equivalence class of a path under the equivalence relation of will be denoted and called the homotopy class of .     product path   Given two paths such that , there is a composition or product path  that traverses first and then , defined by the formula        loop   A loop is a with the same start and end point, also referred to as a . esthesia     basepoint   A is a that the same start and end point, also referred to as a basepoint .     set of all homotopy classes   The set of all homotopy classes  of loops  at the  is denoted .     fundamental group    is a group with respect to the product , . This group is called the fundamental group of at the  .     reparametrization   A reparametrization of a path is a composition where is any continuous such that and .     inverse path   For a path from to , the inverse path  from back to is defined by .     change of basepoint   Either way, we define a change-of-basepoint   by , . This is well-defined since if is a homotopy of loops based at , then is a homotopy of loops based at .     lift   given the relation , is a lift of . p is a projection map.   is an infinite cyclic group generated by the homotopy class of the loop based at .  Note that , , where for . The theorem is therefore equivalent to the statement that every loop in based at is homotopic to for a unique . To prove this the idea will be to compare paths in with paths in via the  given by . This can be visualized geometrically by embedding in as the helix parametrized by , and then is the restriction to the helix of the projection of onto , . Observe that the loop is the composition where is the path , starting at 0 and ending at , winding around the helix times, upward if and downward if . The relation is expressed by saying that is a lift of .   lift      homeomorphic   two spaces are homeomorphic if there exist a homeomorphism between them     homeomorphism   a bijective continuous map between spaces. like a donut to cup.     covering space   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .     evenly covered   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .     sheets   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .     induced homomorphism   Suppose is a taking the basepoint to the basepoint . For brevity we write in this situation. Then induces a homomorphism , defined by composing loops based at with , that is, . This induced  is well-defined since a homotopy of loops based at yields a composed homotopy of loops based at , so . Furthermore, is a homomorphism since , both functions having the value for and the value for .  Two basic properties of induced homomorphisms are:  (1) for a composition .  (2) , which is a concise way of saying that the identity  induces the identity  .     free product   As a set, the free product  consists of all words of arbitrary finite length , where each letter belongs to a group and is not the identity element of , and adjacent letters and belong to different groups , that is, . Words satisfying these conditions are called reduced , the idea being that unreduced words can always be simplified to reduced words by writing adjacent letters that lie in the same as a single letter and by canceling trivial letters. The empty word is allowed, and will be the identity element of .     homotopy lifting property   The homotopy lifting property , also known as the covering homotopy property , states the following:  Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .     path lifting property   First we have the homotopy lifting property , also known as the covering homotopy property :   Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .   Taking to be a point gives the path lifting property for a covering space , which says that for each path and each lift of the starting point , there is a unique path lifting starting at .  In particular, the uniqueness of lifts implies that every lift of a constant path is constant, but this could be deduced more simply from the fact that has the discrete topology, by the definition of a covering space.     unique lifting property   Next we have the unique lifting property :   Proposition 1.34.  Given a covering space and a  , if two lifts of agree at one point of and is connected, then and agree on all of .      semi-locally simply connected   A space is called semi-locally simply connected if for every point and every neighborhood of , there exists an open neighborhood of with such that every loop in can be contracted to a point within .     simply connected   a space X is simply connected if the fundamental group at any point in X is trivial.     path connected   a space is path connected if for any two points in the space, we can find a path from one point to the other in the space. empty spaces are debated if they are path connected.     locally   we say a space has a property locally if each point has an arbitrarily small neighbourhood, with the property     isomorphism between covering spaces   We are interested in uniqueness up to isomorphism, where an isomorphism between covering spaces and is a homeomorphism such that . This condition means exactly that preserves the covering space structures, taking to for each . The inverse is then also an isomorphism, and the composition of two isomorphisms is an isomorphism, so we have an equivalence relation.   Proposition 1.37. If is path-connected and locally path-connected, then two path-connected covering spaces and are isomorphic via an isomorphism taking a basepoint to a basepoint iff .     universal cover   checked till here 30\/11\/2025 the universal cover is unique. is a covering space for every other covering space. A consequence of the lifting criterion is that a simply-connected covering space of a path-connected, locally path-connected space is a covering space of every other path-connected covering space of . A simply-connected covering space of is therefore called a universal cover . It is unique up to isomorphism, so one is justified in calling it the universal cover.     deck transformations   For a covering space the isomorphisms are called deck transformations or covering transformations . These form a group under composition.  For example, for the covering space projecting a vertical helix onto a circle, the deck transformations are the vertical translations taking the helix onto itself, so in this case. For the -sheeted covering space , the deck transformations are the rotations of through angles that are multiples of , so .     normal covering space   A covering space is called normal if for each and each pair of lifts of there is a deck transformation taking to . For example, the covering     group action   Given a group and a space , then an action of on is a homomorphism from to the group of all homeomorphisms from to itself. Thus to each is associated a homeomorphism ,     orbit space   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in , and is called the orbit space of the action. For example, for a normal covering space , the orbit space is just .     orbit   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in .     fixed points   The reason why the action of this group on fails to satisfy is that there are fixed points : points for which there is a nontrivial element with . For example, the vertices of the     free action   An action without fixed points is called a free action. Thus for a free action of on , only the identity element of fixes any point of . This is equivalent to requiring that all the images of each are distinct, or in other words only when , since is equivalent to . Though condition implies freeness, the converse     cayley graph   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .     cayley complex   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .     subgraph   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     tree   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     maximal   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.     K(G,1) space   A path-connected space whose fundamental group is isomorphic to a given group and which has a contractible universal covering space is called a K(G,1) space . The ‘1’ here refers to . More general spaces are studied in 4.2. All these spaces are called Eilenberg-MacLane spaces, though in the case they were studied by Hurewicz before Eilenberg and MacLane took up the general case. Here are some examples:    till pg86  "
 },
 {
   "id": "algebraicTopology-3",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.9",
   "title": "homotopic.",
-  "body": " homotopic   One says that two maps  are homotopic if there exists a  connecting them, and one writes .   "
+  "body": " homotopic   One says that two maps  are homotopic if there exists a  connecting them, and one writes . n ball and dot is homotopic.   "
 },
 {
   "id": "retraction",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.30",
   "title": "suspension.",
-  "body": " suspension   checked till here 24\/11\/2025  For a space , the suspension  is the of obtained by collapsing to one point and to another point. The motivating example is , when with the two ‘suspension points’ at the north and south poles of , the points . One can regard as a double cone on , the union of two copies of the cone  . If is a CW complex, so are and as of with its product cell structure, being given the standard cell structure of two 0-cells joined by a 1-cell.   "
+  "body": " suspension   For a space , the suspension  is the of obtained by collapsing to one point and to another point. The motivating example is , when with the two ‘suspension points’ at the north and south poles of , the points . One can regard as a double cone on , the union of two copies of the cone  . If is a CW complex, so are and as of with its product cell structure, being given the standard cell structure of two 0-cells joined by a 1-cell.   "
 },
 {
   "id": "join",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.31",
   "title": "join.",
-  "body": " join    Join. The cone is the union of all line segments joining points of to an external vertex, and similarly the suspension is the union of all line segments joining points of to two external vertices. More generally, given and a second space , one can define the space of all line segments joining points in to points in . This is the join  , the space of under the identifications and . Thus we are collapsing the subspace to and to .   "
+  "body": " join   goes from X to Y over an interval I. esthesia.   . The cone is the union of all line segments joining points of to an external vertex, and similarly the suspension is the union of all line segments joining points of to two external vertices. More generally, given and a second space , one can define the space of all line segments joining points in to points in . This is the join  , the space of under the identifications and . Thus we are collapsing the subspace to and to .   "
 },
 {
   "id": "simplex",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.33",
   "title": "Wedge Sum.",
-  "body": " Wedge Sum   Given spaces and with chosen points and , the wedge sum  is the of the disjoint union obtained by identifying and to a single point.   "
+  "body": " Wedge Sum    . Given spaces and with chosen points and , the wedge sum  is the of the disjoint union obtained by identifying and to a single point.   "
 },
 {
   "id": "smashProduct",
@@ -682,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.34",
   "title": "smash product.",
-  "body": " smash product   Inside a product space there are copies of and , namely and for points and . These two copies of and in intersect only at the point , so their union can be identified with the  . The smash product  is then defined to be the  .   "
+  "body": " smash product    . Inside a product space there are copies of and , namely and for points and . These two copies of and in intersect only at the point , so their union can be identified with the  . The smash product  is then defined to be the  .   "
 },
 {
   "id": "homotopyEquivalenceCwPair",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.36",
   "title": "reduced suspension.",
-  "body": " reduced suspension   Let be a and a 0-cell. Inside the  we have the line segment , and collapsing this to a point yields a space homotopy equivalent to , called the reduced suspension of .   "
+  "body": " reduced suspension    . Let be a and a 0-cell. Inside the  we have the line segment , and collapsing this to a point yields a space homotopy equivalent to , called the reduced suspension of .   "
 },
 {
   "id": "homotopyExtensionProperty",
@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.42",
   "title": "loop.",
-  "body": " loop   A loop is a that the same start and end point, also referred to as a .   "
+  "body": " loop   A loop is a with the same start and end point, also referred to as a . esthesia   "
 },
 {
   "id": "basepoint",
@@ -811,47 +811,65 @@ var ptx_lunr_docs = [
   "body": " change of basepoint   Either way, we define a change-of-basepoint   by , . This is well-defined since if is a homotopy of loops based at , then is a homotopy of loops based at .   "
 },
 {
-  "id": "simplyConnected",
-  "level": "2",
-  "url": "algebraicTopology.html#simplyConnected",
-  "type": "Definition",
-  "number": "1.2.49",
-  "title": "simply connected.",
-  "body": " simply connected   In general, a space is called simply-connected if it is path-connected and has trivial .   "
-},
-{
   "id": "lift",
   "level": "2",
   "url": "algebraicTopology.html#lift",
   "type": "Definition",
-  "number": "1.2.50",
+  "number": "1.2.49",
   "title": "lift.",
   "body": " lift   given the relation , is a lift of . p is a projection map.   is an infinite cyclic group generated by the homotopy class of the loop based at .  Note that , , where for . The theorem is therefore equivalent to the statement that every loop in based at is homotopic to for a unique . To prove this the idea will be to compare paths in with paths in via the  given by . This can be visualized geometrically by embedding in as the helix parametrized by , and then is the restriction to the helix of the projection of onto , . Observe that the loop is the composition where is the path , starting at 0 and ending at , winding around the helix times, upward if and downward if . The relation is expressed by saying that is a lift of .   lift    "
+},
+{
+  "id": "homeomorphic",
+  "level": "2",
+  "url": "algebraicTopology.html#homeomorphic",
+  "type": "Definition",
+  "number": "1.2.50",
+  "title": "homeomorphic.",
+  "body": " homeomorphic   two spaces are homeomorphic if there exist a homeomorphism between them   "
+},
+{
+  "id": "homeomorphism",
+  "level": "2",
+  "url": "algebraicTopology.html#homeomorphism",
+  "type": "Definition",
+  "number": "1.2.51",
+  "title": "homeomorphism.",
+  "body": " homeomorphism   a bijective continuous map between spaces. like a donut to cup.   "
 },
 {
   "id": "coveringSpace",
   "level": "2",
   "url": "algebraicTopology.html#coveringSpace",
   "type": "Definition",
-  "number": "1.2.51",
+  "number": "1.2.52",
   "title": "covering space.",
-  "body": " covering space   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered .   "
+  "body": " covering space   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .   "
 },
 {
   "id": "evenlyCovered",
   "level": "2",
   "url": "algebraicTopology.html#evenlyCovered",
   "type": "Definition",
-  "number": "1.2.52",
+  "number": "1.2.53",
   "title": "evenly covered.",
-  "body": " evenly covered   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered .   "
+  "body": " evenly covered   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .   "
+},
+{
+  "id": "sheets",
+  "level": "2",
+  "url": "algebraicTopology.html#sheets",
+  "type": "Definition",
+  "number": "1.2.54",
+  "title": "sheets.",
+  "body": " sheets   Given a space , a covering space of consists of a space and a  satisfying the following condition:  For each point there is an open neighborhood of in such that is a union of disjoint open sets each of which is mapped homeomorphically onto by .  Such a will be called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .   "
 },
 {
   "id": "inducedHomomorphism",
   "level": "2",
   "url": "algebraicTopology.html#inducedHomomorphism",
   "type": "Definition",
-  "number": "1.2.53",
+  "number": "1.2.55",
   "title": "induced homomorphism.",
   "body": " induced homomorphism   Suppose is a taking the basepoint to the basepoint . For brevity we write in this situation. Then induces a homomorphism , defined by composing loops based at with , that is, . This induced  is well-defined since a homotopy of loops based at yields a composed homotopy of loops based at , so . Furthermore, is a homomorphism since , both functions having the value for and the value for .  Two basic properties of induced homomorphisms are:  (1) for a composition .  (2) , which is a concise way of saying that the identity  induces the identity  .   "
 },
@@ -860,61 +878,79 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#freeProduct",
   "type": "Definition",
-  "number": "1.2.54",
+  "number": "1.2.56",
   "title": "free product.",
   "body": " free product   As a set, the free product  consists of all words of arbitrary finite length , where each letter belongs to a group and is not the identity element of , and adjacent letters and belong to different groups , that is, . Words satisfying these conditions are called reduced , the idea being that unreduced words can always be simplified to reduced words by writing adjacent letters that lie in the same as a single letter and by canceling trivial letters. The empty word is allowed, and will be the identity element of .   "
-},
-{
-  "id": "sheets",
-  "level": "2",
-  "url": "algebraicTopology.html#sheets",
-  "type": "Definition",
-  "number": "1.2.55",
-  "title": "sheets.",
-  "body": " sheets   A covering space of a space is a space together with a  satisfying the following condition: Each point has an open neighborhood in such that is a union of disjoint open sets in , each of which is mapped homeomorphically onto by . Such a is called evenly covered and the disjoint open sets in that project homeomorphically to by are called sheets of over .   "
 },
 {
   "id": "homotopyLiftingProperty",
   "level": "2",
   "url": "algebraicTopology.html#homotopyLiftingProperty",
   "type": "Definition",
-  "number": "1.2.56",
+  "number": "1.2.57",
   "title": "homotopy lifting property.",
-  "body": " homotopy lifting property   The homotopy lifting property , also known as the covering homotopy property , states the following:   Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .   "
+  "body": " homotopy lifting property   The homotopy lifting property , also known as the covering homotopy property , states the following:  Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .   "
 },
 {
   "id": "pathLiftingProperty",
   "level": "2",
   "url": "algebraicTopology.html#pathLiftingProperty",
   "type": "Definition",
-  "number": "1.2.57",
+  "number": "1.2.58",
   "title": "path lifting property.",
-  "body": " path lifting property   First we have the homotopy lifting property , also known as the covering homotopy property :   Proposition 1.30.  Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .    Proof: This was proved as property (c) in the proof of Theorem 1.7.  Taking to be a point gives the path lifting property for a covering space , which says that for each path and each lift of the starting point , there is a unique path lifting starting at .  In particular, the uniqueness of lifts implies that every lift of a constant path is constant, but this could be deduced more simply from the fact that has the discrete topology, by the definition of a covering space.   "
+  "body": " path lifting property   First we have the homotopy lifting property , also known as the covering homotopy property :   Given a covering space , a homotopy , and a  lifting , then there exists a unique homotopy of that lifts .   Taking to be a point gives the path lifting property for a covering space , which says that for each path and each lift of the starting point , there is a unique path lifting starting at .  In particular, the uniqueness of lifts implies that every lift of a constant path is constant, but this could be deduced more simply from the fact that has the discrete topology, by the definition of a covering space.   "
 },
 {
   "id": "uniqueLiftingProperty",
   "level": "2",
   "url": "algebraicTopology.html#uniqueLiftingProperty",
   "type": "Definition",
-  "number": "1.2.58",
+  "number": "1.2.59",
   "title": "unique lifting property.",
   "body": " unique lifting property   Next we have the unique lifting property :   Proposition 1.34.  Given a covering space and a  , if two lifts of agree at one point of and is connected, then and agree on all of .    "
 },
 {
-  "id": "semilocallySimplyConnected",
+  "id": "semiLocallySimplyConnected",
   "level": "2",
-  "url": "algebraicTopology.html#semilocallySimplyConnected",
+  "url": "algebraicTopology.html#semiLocallySimplyConnected",
   "type": "Definition",
-  "number": "1.2.59",
-  "title": "semilocally simply-connected.",
-  "body": " semilocally simply-connected   A necessary condition for to have a simply-connected covering space is the following: Each point has a neighborhood such that the inclusion-induced  is trivial; one says is semilocally simply-connected if this holds.   "
+  "number": "1.2.60",
+  "title": "semi-locally simply connected.",
+  "body": " semi-locally simply connected   A space is called semi-locally simply connected if for every point and every neighborhood of , there exists an open neighborhood of with such that every loop in can be contracted to a point within .   "
+},
+{
+  "id": "simplyConnected",
+  "level": "2",
+  "url": "algebraicTopology.html#simplyConnected",
+  "type": "Definition",
+  "number": "1.2.61",
+  "title": "simply connected.",
+  "body": " simply connected   a space X is simply connected if the fundamental group at any point in X is trivial.   "
+},
+{
+  "id": "pathConnected",
+  "level": "2",
+  "url": "algebraicTopology.html#pathConnected",
+  "type": "Definition",
+  "number": "1.2.62",
+  "title": "path connected.",
+  "body": " path connected   a space is path connected if for any two points in the space, we can find a path from one point to the other in the space. empty spaces are debated if they are path connected.   "
+},
+{
+  "id": "locally",
+  "level": "2",
+  "url": "algebraicTopology.html#locally",
+  "type": "Definition",
+  "number": "1.2.63",
+  "title": "locally.",
+  "body": " locally   we say a space has a property locally if each point has an arbitrarily small neighbourhood, with the property   "
 },
 {
   "id": "isomorphismBetweenCoveringSpaces",
   "level": "2",
   "url": "algebraicTopology.html#isomorphismBetweenCoveringSpaces",
   "type": "Definition",
-  "number": "1.2.60",
+  "number": "1.2.64",
   "title": "isomorphism between covering spaces.",
   "body": " isomorphism between covering spaces   We are interested in uniqueness up to isomorphism, where an isomorphism between covering spaces and is a homeomorphism such that . This condition means exactly that preserves the covering space structures, taking to for each . The inverse is then also an isomorphism, and the composition of two isomorphisms is an isomorphism, so we have an equivalence relation.   Proposition 1.37. If is path-connected and locally path-connected, then two path-connected covering spaces and are isomorphic via an isomorphism taking a basepoint to a basepoint iff .   "
 },
@@ -923,16 +959,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#universalCover",
   "type": "Definition",
-  "number": "1.2.61",
+  "number": "1.2.65",
   "title": "universal cover.",
-  "body": " universal cover   A consequence of the lifting criterion is that a simply-connected covering space of a path-connected, locally path-connected space is a covering space of every other path-connected covering space of . A simply-connected covering space of is therefore called a universal cover . It is unique up to isomorphism, so one is justified in calling it the universal cover.   "
+  "body": " universal cover   checked till here 30\/11\/2025 the universal cover is unique. is a covering space for every other covering space. A consequence of the lifting criterion is that a simply-connected covering space of a path-connected, locally path-connected space is a covering space of every other path-connected covering space of . A simply-connected covering space of is therefore called a universal cover . It is unique up to isomorphism, so one is justified in calling it the universal cover.   "
 },
 {
   "id": "deckTransformations",
   "level": "2",
   "url": "algebraicTopology.html#deckTransformations",
   "type": "Definition",
-  "number": "1.2.62",
+  "number": "1.2.66",
   "title": "deck transformations.",
   "body": " deck transformations   For a covering space the isomorphisms are called deck transformations or covering transformations . These form a group under composition.  For example, for the covering space projecting a vertical helix onto a circle, the deck transformations are the vertical translations taking the helix onto itself, so in this case. For the -sheeted covering space , the deck transformations are the rotations of through angles that are multiples of , so .   "
 },
@@ -941,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#normalCoveringSpace",
   "type": "Definition",
-  "number": "1.2.63",
+  "number": "1.2.67",
   "title": "normal covering space.",
   "body": " normal covering space   A covering space is called normal if for each and each pair of lifts of there is a deck transformation taking to . For example, the covering   "
 },
@@ -950,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#groupAction",
   "type": "Definition",
-  "number": "1.2.64",
+  "number": "1.2.68",
   "title": "group action.",
   "body": " group action   Given a group and a space , then an action of on is a homomorphism from to the group of all homeomorphisms from to itself. Thus to each is associated a homeomorphism ,   "
 },
@@ -959,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#orbitSpace",
   "type": "Definition",
-  "number": "1.2.65",
+  "number": "1.2.69",
   "title": "orbit space.",
   "body": " orbit space   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in , and is called the orbit space of the action. For example, for a normal covering space , the orbit space is just .   "
 },
@@ -968,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#orbit",
   "type": "Definition",
-  "number": "1.2.66",
+  "number": "1.2.70",
   "title": "orbit.",
   "body": " orbit   Given an action of a group on a space , we can form a space , the space of in which each point is identified with all its images as ranges over . The points of are thus the orbits  in .   "
 },
@@ -977,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#fixedPoints",
   "type": "Definition",
-  "number": "1.2.67",
+  "number": "1.2.71",
   "title": "fixed points.",
   "body": " fixed points   The reason why the action of this group on fails to satisfy is that there are fixed points : points for which there is a nontrivial element with . For example, the vertices of the   "
 },
@@ -986,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#freeAction",
   "type": "Definition",
-  "number": "1.2.68",
+  "number": "1.2.72",
   "title": "free action.",
   "body": " free action   An action without fixed points is called a free action. Thus for a free action of on , only the identity element of fixes any point of . This is equivalent to requiring that all the images of each are distinct, or in other words only when , since is equivalent to . Though condition implies freeness, the converse   "
 },
@@ -995,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#cayleyGraph",
   "type": "Definition",
-  "number": "1.2.69",
+  "number": "1.2.73",
   "title": "cayley graph.",
   "body": " cayley graph   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .   "
 },
@@ -1004,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#cayleyComplex",
   "type": "Definition",
-  "number": "1.2.70",
+  "number": "1.2.74",
   "title": "cayley complex.",
   "body": " cayley complex   Covering spaces can be used to describe a very classical method for viewing groups geometrically as graphs. Recall from Corollary 1.28 how we associated to each group presentation a 2-dimensional cell complex with by taking a wedge-sum of circles, one for each generator , and then attaching a 2-cell for each relator . We can construct a cell complex with a covering space action of such that in the following way. Let the vertices of be the elements of themselves. Then, at each vertex , insert an edge joining to for each of the chosen generators . The resulting graph is known as the Cayley graph of with respect to the generators . This graph is connected since every element of is a product of 's, so there is a path in the graph joining each vertex to the identity vertex . Each relation determines a loop in the graph, starting at any vertex , and we attach a 2-cell for each such loop. The resulting cell complex is the Cayley complex of . The group acts on by multiplication on the left. Thus, an element sends a vertex to the vertex , and the edge from to is sent to the edge from to . The action extends to 2-cells in the obvious way. This is clearly a covering space action, and the orbit space is just .   "
 },
@@ -1013,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#subgraph",
   "type": "Definition",
-  "number": "1.2.71",
+  "number": "1.2.75",
   "title": "subgraph.",
   "body": " subgraph   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.   "
 },
@@ -1022,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#tree",
   "type": "Definition",
-  "number": "1.2.72",
+  "number": "1.2.76",
   "title": "tree.",
   "body": " tree   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.   "
 },
@@ -1031,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#maximal",
   "type": "Definition",
-  "number": "1.2.73",
+  "number": "1.2.77",
   "title": "maximal.",
   "body": " maximal   A subgraph of a graph is a subspace that is a union of vertices and edges of , such that implies . The latter condition just says that is a closed subspace of . A tree is a contractible graph. By a tree in a graph we mean a subgraph that is a tree. We call a tree in  maximal if it contains all the vertices of . This is equivalent to the more obvious meaning of maximality, as we will see below.   "
 },
@@ -1040,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "algebraicTopology.html#KG1Space",
   "type": "Definition",
-  "number": "1.2.74",
+  "number": "1.2.78",
   "title": "K(G,1) space.",
   "body": " K(G,1) space   A path-connected space whose fundamental group is isomorphic to a given group and which has a contractible universal covering space is called a K(G,1) space . The ‘1’ here refers to . More general spaces are studied in 4.2. All these spaces are called Eilenberg-MacLane spaces, though in the case they were studied by Hurewicz before Eilenberg and MacLane took up the general case. Here are some examples:   "
 },
